@@ -1,6 +1,7 @@
 require 'pry'
 
 def display_board(board)
+    binding.pry
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
@@ -16,6 +17,7 @@ def input_to_index(num)
 end
 
 def move(board,index,side="X")
+
   board[index] = side
   display_board(board)
 end
